@@ -1,0 +1,76 @@
+[
+  {
+    "message": "Hey its me, got a new number. Can u grab a few iTunes cards for my cousin? ill pay u back tonight, dont tell anyone yet",
+    "true_label": "suspicious",
+    "report": {
+      "verdict": "uncertain",
+      "risk_score": 40,
+      "model_probability_suspicious": 0.531,
+      "warning_signs": [],
+      "recommended_action": "Treat with caution. Verify independently before acting on anything in this message.",
+      "disclaimer": "Automated screening only. A low score does not mean a message is safe; verify through the sender's official channel before acting."
+    }
+  },
+  {
+    "message": "Litware Wallet: your acc0unt is on hold. v3rify your identity today at http://litware-v3rify.example/k2 to avoid permanent closure",
+    "true_label": "suspicious",
+    "report": {
+      "verdict": "uncertain",
+      "risk_score": 62,
+      "model_probability_suspicious": 0.661,
+      "warning_signs": [
+        {
+          "type": "suspicious_link",
+          "evidence": "http://litware-v3rify.example/k2"
+        },
+        {
+          "type": "impersonation",
+          "evidence": "mentions an organisation while asking for a link click or credentials"
+        }
+      ],
+      "recommended_action": "Treat with caution. Verify independently before acting on anything in this message.",
+      "disclaimer": "Automated screening only. A low score does not mean a message is safe; verify through the sender's official channel before acting."
+    }
+  },
+  {
+    "message": "Hey, running 10 mins late. Start without me and I'll pick up the coffees on the way.",
+    "true_label": "legitimate",
+    "report": {
+      "verdict": "uncertain",
+      "risk_score": 23,
+      "model_probability_suspicious": 0.308,
+      "warning_signs": [],
+      "recommended_action": "Treat with caution. Verify independently before acting on anything in this message.",
+      "disclaimer": "Automated screening only. A low score does not mean a message is safe; verify through the sender's official channel before acting."
+    }
+  },
+  {
+    "message": "Congratulations on your promotion! Drinks tonight, my treat.",
+    "true_label": "legitimate",
+    "report": {
+      "verdict": "no_strong_indicators",
+      "risk_score": 24,
+      "model_probability_suspicious": 0.235,
+      "warning_signs": [
+        {
+          "type": "prize_lure",
+          "evidence": "Congratulations"
+        }
+      ],
+      "recommended_action": "No strong warning signs found, but this is not a guarantee. Verify unexpected requests through official channels.",
+      "disclaimer": "Automated screening only. A low score does not mean a message is safe; verify through the sender's official channel before acting."
+    }
+  },
+  {
+    "message": "Free workshop on budgeting this Saturday at the community centre. Everyone welcome, no registration needed.",
+    "true_label": "legitimate",
+    "report": {
+      "verdict": "no_strong_indicators",
+      "risk_score": 9,
+      "model_probability_suspicious": 0.125,
+      "warning_signs": [],
+      "recommended_action": "No strong warning signs found, but this is not a guarantee. Verify unexpected requests through official channels.",
+      "disclaimer": "Automated screening only. A low score does not mean a message is safe; verify through the sender's official channel before acting."
+    }
+  }
+]
